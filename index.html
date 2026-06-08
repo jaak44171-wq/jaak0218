@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Дарханы Цахилгаан Холбоо</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#eef4ff;
+}
+
+header{
+background:#003b8e;
+color:white;
+padding:20px;
+text-align:center;
+font-size:32px;
+font-weight:bold;
+}
+
+.hero{
+background:linear-gradient(135deg,#004aad,#001d5c);
+color:white;
+padding:60px 20px;
+text-align:center;
+}
+
+.hero h1{
+font-size:50px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:20px;
+}
+
+.container{
+width:90%;
+max-width:1100px;
+margin:auto;
+padding:50px 0;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+margin-bottom:50px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+text-align:center;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h3{
+color:#004aad;
+margin-top:10px;
+}
+
+.form-box{
+background:white;
+padding:35px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.form-box h2{
+text-align:center;
+color:#004aad;
+margin-bottom:25px;
+}
+
+form{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+}
+
+input,select,textarea{
+width:100%;
+padding:12px;
+border:1px solid #ccc;
+border-radius:8px;
+font-size:16px;
+}
+
+textarea{
+grid-column:1/3;
+resize:none;
+height:140px;
+}
+
+button{
+grid-column:1/3;
+padding:15px;
+background:#0057d8;
+color:white;
+font-size:20px;
+border:none;
+border-radius:10px;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+background:#003d99;
+}
+
+footer{
+margin-top:50px;
+background:#003b8e;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+@media(max-width:700px){
+
+form{
+grid-template-columns:1fr;
+}
+
+textarea{
+grid-column:1;
+}
+
+button{
+grid-column:1;
+}
+
+.hero h1{
+font-size:35px;
+}
+
+}
+</style>
+
+</head>
+<body>
+
+<header>
+Дарханы Цахилгаан Холбоо
+</header>
+
+<section class="hero">
+<h1>Онлайн хүсэлт илгээх</h1>
+<p>Холбоотой байж — Хөгжилтэй урагшилъя!</p>
+</section>
+
+<div class="container">
+
+<div class="services">
+
+<div class="card">
+<h2>🌐</h2>
+<h3>Интернет</h3>
+<p>Өндөр хурдны интернет үйлчилгээ</p>
+</div>
+
+<div class="card">
+<h2>📺</h2>
+<h3>IPTV</h3>
+<p>Дижитал телевизийн үйлчилгээ</p>
+</div>
+
+
+
+<div class="card">
+<h2>🛠️</h2>
+<h3>Засвар</h3>
+<p>Сүлжээ болон тоног төхөөрөмжийн үйлчилгээ</p>
+</div>
+
+</div>
+
+<div class="form-box">
+
+<h2>📩 Онлайн хүсэлт</h2>
+
+<form>
+
+<input type="text" placeholder="Овог нэр" required>
+
+<input type="tel" placeholder="Утасны дугаар" required>
+
+<input type="email" placeholder="Имэйл">
+
+<input type="text" placeholder="Хаяг">
+
+<select>
+<option>Үйлчилгээ сонгоно уу</option>
+<option>Интернет</option>
+<option>IPTV</option>
+<option>Сүлжээний засвар</option>
+<option>Бусад</option>
+</select>
+
+<input type="text" placeholder="Сэдэв">
+
+<textarea placeholder="Хүсэлтээ дэлгэрэнгүй бичнэ үү..."></textarea>
+
+<button type="submit">
+📨 Хүсэлт илгээх
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+<footer>
+© 2026 Дарханы Цахилгаан Холбоо | Онлайн үйлчилгээ
+</footer>
+
+</body>
+</html>
